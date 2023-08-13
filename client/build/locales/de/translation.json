@@ -1,0 +1,43 @@
+{
+    "nav":{
+        "home":"Willkommen",
+        "form":"Eine Anfrage Stellen",
+        "contact":"Kontaktiere Uns"
+    },
+    "hero":{
+        "header":"Fordern Sie Ihre Krankenversicherungsprämie für 2024 ",
+        "paragraph":"What is a paragraph? Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.",
+        "button":"Loslegen"
+    },
+    "form":{
+        "header":"Fordern Sie Ihre Prämie nach Alter, Kanton und Franchise an",
+        "paragraph":"What is a paragraph? Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.",
+        "name":"Name",
+        "fullname":"Vorname",
+        "email":"Email",
+        "phone":"Telefon",
+        "anniversary":"Geburtsdatum ",
+        "address":"Adresse",
+        "franchise":"Gewünschter Selbstbehalt",
+        "npa":"Postleitzahl",
+        "button":"Gesendet"
+    },
+    "testimonial":{
+        "header":"Uns liegt auch das Erlebnis unserer Kunden am Herzen",
+        "quote1":" Ich hatte kürzlich das Vergnügen, Compareprime zu verwenden, und ich muss sagen, es hat alle meine Erwartungen übertroffen! Der gesamte Prozess verlief von Anfang bis Ende reibungslos und problemlos",
+        "quote2":"Der Kundenservice von Prime Comparator verdient besondere Erwähnung. Wann immer ich eine Frage hatte oder Hilfe brauchte, stand mir das Team jederzeit zur Verfügung. Sie waren sachkundig, geduldig und taten ihr Bestes, um sicherzustellen, dass ich alle Informationen hatte, die ich brauchte, um die richtige Wahl zu treffen. Ihre Professionalität und ihr Engagement für die Kundenzufriedenheit waren wirklich lobenswert. ",
+        "quote3":" Ich bin mit dem von mir gewählten Versicherungsplan zufrieden. Der Versicherungsschutz ist umfassend und die Prämien äußerst wettbewerbsfähig. Ich habe die Gewissheit, dass ich über die richtige Versicherung verfüge, um mich und meine Familie zu schützen. "
+    },
+    "footer":{
+        "sitemap":{
+            "title":"Seitenverzeichnis",
+            "item1":"Willkommen",
+            "item2":"Eine Anfrage stellen",
+            "item3":"Kontaktiere uns"
+        },
+        "contact":{
+            "title":"Kontakt"
+        },
+        "copyright":"Alle Rechte vorbehalten."
+    }
+}
