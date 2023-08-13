@@ -15,7 +15,7 @@ export default function Form(){
    
     // ============================
 
-   const url = "https://localhost:3000/"
+  
    const [data,setData] = useState({
     nom:"",
     prenom:"",
@@ -41,7 +41,7 @@ export default function Form(){
 
         
 
-        fetch("http://localhost:3000/send", {
+        fetch("https://famous-cape-tick.cyclic.app/send", {
             method: "POST",
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
             cache: 'default',
