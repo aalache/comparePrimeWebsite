@@ -1,0 +1,19 @@
+.carousel{
+    background-image: url(../assets/rajiv-perera-LCAbBV6-CbI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.embla {
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.embla__slide > img{
+    object-fit:contain;
+}

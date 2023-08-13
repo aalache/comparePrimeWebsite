@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body .hero {
+  /* background-color: #0f172a; */
+  background-image: url(./assets/roberto-nickson-smJ6XsYy8gA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* object-fit: scale-down; */
+}
