@@ -41,7 +41,7 @@ export default function Form(){
 
         
 
-        fetch("/send", {
+        fetch("https://compareprimesite.onrender.com/send", {
             method: "POST",
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
             cache: 'default',
