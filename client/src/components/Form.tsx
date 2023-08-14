@@ -41,7 +41,7 @@ export default function Form(){
 
         
 
-        fetch("http://localhost:3000/send", {
+        fetch("/send", {
             method: "POST",
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
             cache: 'default',
