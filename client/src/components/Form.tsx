@@ -41,10 +41,9 @@ export default function Form(){
 
         
 
-        fetch("https://famous-cape-tick.cyclic.app:3000/send", {
+        fetch("http://localhost:3000/send", {
             method: "POST",
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
-            cache: 'default',
             body:JSON.stringify({
                 nom:data.nom,
                 prenom:data.prenom,
