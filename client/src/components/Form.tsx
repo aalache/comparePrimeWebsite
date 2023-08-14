@@ -56,6 +56,7 @@ export default function Form(){
             }),
         }).then(function (res) {
                 return res.text()
+                
         }).then(function(text){
             console.log(text)
             alert('Message was sent successfully')
