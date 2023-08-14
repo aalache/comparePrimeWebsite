@@ -15,9 +15,12 @@ const port = process.env.SERVER_PORT ;
 
 
 
-app.use(cors({
-    origin: 'https://compareprimesite.onrender.com'
-}))
+app.use(
+    cors({
+        origin: 'http://localhost:5173',
+        methods: ["GET","POST"],
+    }
+))
 
 app.use(express.json());
 app.use(express.urlencoded({ 
