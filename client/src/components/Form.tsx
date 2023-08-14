@@ -39,11 +39,10 @@ export default function Form(){
         e.preventDefault();
         console.log("hit")
 
-        
+        // mode:'cors',
 
         fetch("http://localhost:3000/send", {
             method: "POST",
-            mode:'cors',
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
             body:JSON.stringify({
                 nom:data.nom,
