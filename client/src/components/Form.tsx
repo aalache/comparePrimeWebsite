@@ -40,7 +40,7 @@ export default function Form(){
         console.log("hit")
 
 
-        fetch("http://localhost:3000/send", {
+        fetch("https://compareprimesite.onrender.com/send", {
             method: "POST",
             mode:'cors',
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
