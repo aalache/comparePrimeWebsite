@@ -40,7 +40,7 @@ export default function Form(){
         console.log("hit")
 
 
-        fetch("http://localhost:3000/send", {
+        fetch("https://localhost:3000/send", {
             method: "POST",
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
             body:JSON.stringify({
