@@ -19,7 +19,7 @@ const port = process.env.SERVER_PORT ;
 //     cors({
 //         // origin: '*',
 //     })
-)
+// )
 
 // app.use((req, res, next) => {
 //     res.append('Access-Control-Allow-Origin', ['*']);
