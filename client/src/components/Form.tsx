@@ -42,7 +42,7 @@ export default function Form(){
 
         fetch("http://localhost:3000/send", {
             method: "POST",
-            mode:'same-origin',
+            mode:'no-cors',
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
             body:JSON.stringify({
                 nom:data.nom,
