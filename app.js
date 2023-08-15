@@ -17,15 +17,15 @@ const port = process.env.SERVER_PORT ;
 
 app.use(
     cors({
-        origin: '*',
+        origin: 'http://localhost:5173',
     })
 )
 
-app.use((req, res, next) => {
-    res.append('Access-Control-Allow-Origin', ['*']);
-    res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    next();
-});
+// app.use((req, res, next) => {
+//     res.append('Access-Control-Allow-Origin', ['*']);
+//     res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+//     next();
+// });
 
 app.use(express.json());
 app.use(express.urlencoded({ 
