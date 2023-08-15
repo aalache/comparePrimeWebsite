@@ -15,10 +15,10 @@ const port = process.env.SERVER_PORT ;
 
 
 
-app.use(
-    cors({
-        // origin: '*',
-    })
+// app.use(
+//     cors({
+//         // origin: '*',
+//     })
 )
 
 // app.use((req, res, next) => {
@@ -89,7 +89,7 @@ async function sendEmail(data){
 
 
 
-app.post("/send",(req,res) => {
+app.post("/api/send",(req,res) => {
     console.log("Message sent!")
     console.log(req.body)
     sendEmail(req.body)
