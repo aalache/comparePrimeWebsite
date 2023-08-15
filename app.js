@@ -17,7 +17,7 @@ const port = process.env.SERVER_PORT ;
 
 app.use(
     cors({
-        origin: '*',
+        // origin: '*',
     })
 )
 
