@@ -3,7 +3,7 @@ import nodemailer from "nodemailer"
 import dotenv from 'dotenv'
 import path from 'path';
 import { URL } from 'url';
-import corsMiddleware from './cors/index.js'
+import cors from 'cors'
 
 
 dotenv.config();
@@ -11,8 +11,7 @@ dotenv.config();
 const app = express(); 
 const port = process.env.SERVER_PORT ;
 
-app.options('*',corsMiddleware)
-app.use(corsMiddleware)
+app.use(cors)
 
 // app.use((req, res, next) => {
 //     res.append('Access-Control-Allow-Origin', ['*']);

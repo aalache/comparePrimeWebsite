@@ -42,7 +42,7 @@ export default function Form(){
 
         fetch("http://localhost:3000/send", {
             method: "POST",
-            headers: { 'Content-type': 'application/json; charset=UTF-8' },
+            // headers: { 'Content-type': 'application/json; charset=UTF-8' },
             body:JSON.stringify({
                 nom:data.nom,
                 prenom:data.prenom,
@@ -98,7 +98,7 @@ export default function Form(){
                     </p>
                 </Reveal> 
             </div>
-            <form id="form" method='post' onSubmit={(e) => handleSubmit(e)} 
+            <form  id="form" method='post' onSubmit={(e) => handleSubmit(e)} 
                   className="grid grid-cols-1 sm:max-w-[550px] md:max-w-[900px] md:grid-cols-2 gap-3 justify-center content-center pt-20 mx-auto px-4 text-blue-700 font-medium mt-20 sm:mt-5"  >
                 <Reveal>
                     <div className="flex flex-col justify-between  ">
