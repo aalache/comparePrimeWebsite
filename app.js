@@ -1,26 +1,18 @@
-import express from "express"
+import express, { Router } from "express"
 import nodemailer from "nodemailer"
-import cors from 'cors'
 import dotenv from 'dotenv'
 import path from 'path';
-
 import { URL } from 'url';
-
+import corsMiddleware from './cors/index.js'
 
 
 dotenv.config();
 
-const app = express();
+const app = express(); 
 const port = process.env.SERVER_PORT ;
 
-
-
-app.use(
-    cors({ 
-        origin: 'https://famous-cape-tick.cyclic.app', 
-        methods: ['POST','GET']
-    })
-)
+app.options('*',corsMiddleware)
+app.use(corsMiddleware)
 
 // app.use((req, res, next) => {
 //     res.append('Access-Control-Allow-Origin', ['*']);
