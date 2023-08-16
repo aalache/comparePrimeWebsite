@@ -11,7 +11,7 @@ dotenv.config();
 const app = express(); 
 const port = process.env.SERVER_PORT ;
 
-app.use(cors)
+app.use(cors())
 
 // app.use((req, res, next) => {
 //     res.append('Access-Control-Allow-Origin', ['*']);
