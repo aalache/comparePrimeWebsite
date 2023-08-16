@@ -15,11 +15,7 @@ const port = process.env.SERVER_PORT ;
 
 
 
-// app.use(
-//     cors({
-//         // origin: '*',
-//     })
-// )
+app.use(cors({ origin: 'http://localhost:3000'}))
 
 // app.use((req, res, next) => {
 //     res.append('Access-Control-Allow-Origin', ['*']);
@@ -89,7 +85,7 @@ async function sendEmail(data){
 
 
 
-app.post("/api/send",(req,res) => {
+app.post("/send",(req,res) => {
     console.log("Message sent!")
     console.log(req.body)
     sendEmail(req.body)
