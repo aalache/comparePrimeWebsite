@@ -15,7 +15,7 @@ const port = process.env.SERVER_PORT ;
 
 
 
-app.use(cors({ origin: 'http://localhost:3000'}))
+app.use(cors({ origin: 'https://famous-cape-tick.cyclic.app'}))
 
 // app.use((req, res, next) => {
 //     res.append('Access-Control-Allow-Origin', ['*']);
