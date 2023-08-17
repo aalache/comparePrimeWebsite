@@ -11,19 +11,12 @@ dotenv.config();
 const app = express(); 
 const port = process.env.SERVER_PORT ;
 
-app.use(cors())
+app.use(cors({
+    origin: "http://localhost:5173",
+    methods:["GET","POST"]
+}))
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', ['*']);
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
 
-    if (req.method === "OPTIONS") {
-        res.header('Access-Control-Allow-Origin', ['*']);
-        res.header("Access-Control-Allow-Headers", "Content-type,Accept,X-Custom-Header");
-        return res.status(200).end();
-    }
-    next();
-});
 
 app.use(express.json());
 app.use(express.urlencoded({ 
