@@ -44,7 +44,7 @@ export default function Form(){
         // .catch(err => console.log(err))
 
         fetch("http://localhost:3000/send", {
-            method: "POST",
+            // method: "POST",
             // headers: { 'Content-type': 'application/json; charset=UTF-8' },
             body:JSON.stringify({
                 nom:data.nom,
