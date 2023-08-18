@@ -1,0 +1,43 @@
+{
+    "nav":{
+        "home":"Accueille",
+        "form":"Faire Une Demande",
+        "contact":"Nous Contacter"
+    },
+    "hero":{
+        "header":"Demander votre prime d'assurance maladie 2024",
+        "paragraph":"What is a paragraph? Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.",
+        "button":"Get Started"
+    },
+    "form":{
+        "header":"Demander votre prime par âge, canton et franchise",
+        "paragraph":"What is a paragraph? Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.",
+        "name":"Nom",
+        "fullname":"Prenom",
+        "email":"Email",
+        "phone":"Téléphone",
+        "anniversary":"Date de Naissance ",
+        "address":"Adresse",
+        "franchise":"Franchise souhaitée",
+        "npa":"NPA",
+        "button":"Envoyée"
+    },
+    "testimonial":{
+        "header":"Nous nous soucions également de l'expérience de nos clients",
+        "quote1":" J'ai récemment eu le plaisir d'utiliser Compareprime, et je dois dire que cela a dépassé toutes mes attentes ! Du début à la fin, l'ensemble du processus s'est déroulé de manière transparente et sans tracas.",
+        "quote2":" Le service client de Comparateur de Prime mérite une mention spéciale. Chaque fois que j'avais une question ou que j'avais besoin d'aide, leur équipe était facilement disponible pour m'aider. Ils étaient compétents, patients et se sont surpassés pour s'assurer que j'avais toutes les informations dont j'avais besoin pour faire le bon choix. Leur professionnalisme et leur dévouement à la satisfaction de la clientèle étaient vraiment louables.",
+        "quote3":"Je suis ravi de la formule d'assurance que j'ai choisie. La couverture est complète et les primes sont extrêmement compétitives. J'ai l'esprit tranquille en sachant que j'ai la bonne assurance pour me protéger et protéger ma famille. ."
+    },
+    "footer":{
+        "sitemap":{
+            "title":"Sitemap",
+            "item1":"Accueille",
+            "item2":"Faire Une Demande",
+            "item3":"Nous Contacter"
+        },
+        "contact":{
+            "title":"contacte"
+        },
+        "copyright":"Tous droits réservés."
+    }
+}
