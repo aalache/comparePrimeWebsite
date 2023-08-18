@@ -45,7 +45,7 @@ export default function Form(){
 
         const formdata = new URLSearchParams(data)
 
-        fetch("http://localhost:3000/send", {
+        fetch("http://localhost:5173/send", {
             method: "POST",
             body: formdata,
         }).then(res => res.json())
