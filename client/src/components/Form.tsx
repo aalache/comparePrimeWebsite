@@ -43,18 +43,18 @@ export default function Form(){
         // .then(res => console.log('RES::::::::',res.data))
         // .catch(err => console.log(err))
 
+        const formdata = new URLSearchParams(data)
 
         fetch("http://localhost:3000/send", {
             method: "POST",
-            headers: { 'Content-type': 'text/plain; charset=utf-8' },
-            body:"some plain text data",
-        }).then(function (res) {
-                return res.text()
-                
-        }).then(function(text){
-            console.log(text)
+            body: formdata,
+        }).then(res => res.json())
+          .then(data =>{
+            console.log(data)
             alert('Message was sent successfully')
-        }).catch(function(error){
+
+        }).catch(error => {
+
             alert('Oops something went wrong!!!')
             console.log(error)
         })
