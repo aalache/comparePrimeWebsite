@@ -12,16 +12,16 @@ const app = express();
 const port = process.env.SERVER_PORT ;
 
 app.use(cors({
-    origin: "*",
+    // origin: "*",
     // methods:["GET","POST"]
 }))
 
-app.use((req, res, next) => {
-    res.append('Access-Control-Allow-Origin', ['*']);
-    res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.append('Access-Control-Allow-Headers', 'Content-Type');
-    next();
-});
+// app.use((req, res, next) => {
+//     res.append('Access-Control-Allow-Origin', ['*']);
+//     res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+//     res.append('Access-Control-Allow-Headers', 'Content-Type');
+//     next();
+// });
 
 
 app.use(express.json());
@@ -34,19 +34,19 @@ app.use(express.urlencoded({
 const __dirname = new URL('.', import.meta.url).pathname;
 
 
-app.use(express.static('./client/build'));
-
-app.get("*",(req,res) => {
-    res.sendFile('./client/build/index.html', {root: __dirname}); 
-})
-
-
-
-// app.use(express.static('build'));
+// app.use(express.static('./client/build'));
 
 // app.get("*",(req,res) => {
-//     res.sendFile('./build/index.html', {root: __dirname}); 
+//     res.sendFile('./client/build/index.html', {root: __dirname}); 
 // })
+
+
+
+app.use(express.static('build'));
+
+app.get("*",(req,res) => {
+    res.sendFile('./build/index.html', {root: __dirname}); 
+})
  
 
 // {name,fullname,email,phone,anniversary,address,franchise,npa}
