@@ -43,19 +43,11 @@ export default function Form(){
         // .then(res => console.log('RES::::::::',res.data))
         // .catch(err => console.log(err))
 
+
         fetch("http://localhost:3000/send", {
             method: "POST",
-            headers: { 'Content-type': 'text/plain' },
-            body:JSON.stringify({
-                nom:data.nom,
-                prenom:data.prenom,
-                email:data.email,
-                phone:data.phone,
-                anniversary:data.anniversary,
-                adresse:data.adresse,
-                franchise:data.franchise,
-                npa:data.npa,
-            }),
+            headers: { 'Content-type': 'text/plain; charset=utf-8' },
+            body:"some plain text data",
         }).then(function (res) {
                 return res.text()
                 
@@ -66,6 +58,31 @@ export default function Form(){
             alert('Oops something went wrong!!!')
             console.log(error)
         })
+
+
+        // fetch("http://localhost:3000/send", {
+        //     method: "POST",
+        //     headers: { 'Content-type': 'application/json; charset=UTF-8' },
+        //     body:JSON.stringify({
+        //         nom:data.nom,
+        //         prenom:data.prenom,
+        //         email:data.email,
+        //         phone:data.phone,
+        //         anniversary:data.anniversary,
+        //         adresse:data.adresse,
+        //         franchise:data.franchise,
+        //         npa:data.npa,
+        //     }),
+        // }).then(function (res) {
+        //         return res.text()
+                
+        // }).then(function(text){
+        //     console.log(text)
+        //     alert('Message was sent successfully')
+        // }).catch(function(error){
+        //     alert('Oops something went wrong!!!')
+        //     console.log(error)
+        // })
 
         resetForm();
    }

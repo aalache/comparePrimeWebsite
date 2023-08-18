@@ -28,10 +28,10 @@ app.use(express.urlencoded({
 const __dirname = new URL('.', import.meta.url).pathname;
 
 
-app.use(express.static('./client/build'));
+app.use(express.static('./client/dist'));
 
 app.get("*",(req,res) => {
-    res.sendFile('./client/build/index.html', {root: __dirname}); 
+    res.sendFile('./client/dist/index.html', {root: __dirname}); 
 })
 
 
