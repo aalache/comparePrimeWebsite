@@ -28,19 +28,19 @@ app.use(express.urlencoded({
 const __dirname = new URL('.', import.meta.url).pathname;
 
 
-// app.use(express.static('./client/build'));
-
-// app.get("*",(req,res) => {
-//     res.sendFile('./client/build/index.html', {root: __dirname}); 
-// })
-
-
-
-app.use(express.static('build'));
+app.use(express.static('./client/build'));
 
 app.get("*",(req,res) => {
-    res.sendFile('./build/index.html', {root: __dirname}); 
+    res.sendFile('./client/build/index.html', {root: __dirname}); 
 })
+
+
+
+// app.use(express.static('build'));
+
+// app.get("*",(req,res) => {
+//     res.sendFile('./build/index.html', {root: __dirname}); 
+// })
  
 
 // {name,fullname,email,phone,anniversary,address,franchise,npa}
