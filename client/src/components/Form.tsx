@@ -45,7 +45,7 @@ export default function Form(){
 
         const formdata = new URLSearchParams(data)
 
-        fetch("https://famous-cape-tick.cyclic.app/send", {
+        fetch("/send", {
             method: "POST",
             body: formdata,
         }).then(res => res.json())
