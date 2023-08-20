@@ -11,7 +11,12 @@ dotenv.config();
 const app = express(); 
 const port = process.env.SERVER_PORT ;
 
-app.use(cors())
+const corsOptions = {
+    origin: "https://famous-cape-tick.cyclic.app",
+};
+  
+app.use(cors(corsOptions));
+
 
 // app.use((req, res, next) => {
 //     res.append('Access-Control-Allow-Origin', ['*']);
