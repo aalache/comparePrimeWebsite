@@ -1,7 +1,6 @@
 import express, { Router } from "express"
 import nodemailer from "nodemailer"
 import dotenv from 'dotenv'
-import path from 'path';
 import { URL } from 'url';
 import cors from 'cors'
 
@@ -11,19 +10,12 @@ dotenv.config();
 const app = express(); 
 const port = process.env.SERVER_PORT ;
 
-const corsOptions = {
-    origin: "https://famous-cape-tick.cyclic.app",
-};
+
   
-app.use(cors(corsOptions));
+app.use(cors());
 
 
-// app.use((req, res, next) => {
-//     res.append('Access-Control-Allow-Origin', ['*']);
-//     res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-//     res.append('Access-Control-Allow-Headers', 'Content-Type');
-//     next();
-// });
+
 
 
 app.use(express.json());
@@ -44,11 +36,6 @@ app.get("*",(req,res) => {
 
 
 
-// app.use(express.static('build'));
-
-// app.get("*",(req,res) => {
-//     res.sendFile('./build/index.html', {root: __dirname}); 
-// })
  
 
 // {name,fullname,email,phone,anniversary,address,franchise,npa}
