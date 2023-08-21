@@ -52,7 +52,7 @@ export default function Footer(){
             </div>
             <div className="max-w-[1240px] mx-auto text-center border-t border-gray-400 text-white py-5">
                 <Reveal>
-                    <p className="">Copyright © {date.getFullYear()}-{date.getFullYear()+1} - compareprime.com {t('footer.copyright')} </p>
+                    <p className=" text-xs sm:text-base">Copyright © {date.getFullYear()}-{date.getFullYear()+1} - compareprime.com {t('footer.copyright')} </p>
                 </Reveal>
             </div>
 

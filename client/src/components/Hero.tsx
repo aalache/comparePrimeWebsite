@@ -9,22 +9,22 @@ export default function Hero() {
     const { t } = useTranslation();
     return (
         <div className='hero ' id='hero'>
-            <div className="bg-gradient-to-tl from-blue-700/40 via-blue-700/90 to-blue-700 lg:h-[100vh] h-auto w-full mx-auto  pb-5 text-white border-t-4 ">
+            <div className="bg-gradient-to-tl from-blue-700/40 via-blue-700/90 to-blue-700 lg:h-[100vh] h-auto w-full mx-auto pt-16 pb-5 text-white border-t-4 ">
             <Navbar />
-                <div className='grid pt-24 md:pt-20 justify-between justify-items-center content-end lg:grid-cols-2 lg:h-[77vh] max-w-[1240px]  mx-auto px-4  gap-5 mt-6'>
-                    <div className=' w-full  md:mx-auto pb-3  md:pt-16 lg:pt-0 text-center lg:text-left'>
+                <div className='grid justify-between justify-items-center content-end lg:grid-cols-2 lg:h-[77vh] max-w-[1240px]  mx-auto px-4  gap-5 mt-6'>
+                    <div className=' w-full  md:mx-auto pb-3  text-center lg:text-left'>
                         <motion.h1 variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: 1, y: 0 }, }}
                             initial="hidden"
                             animate="visible"
                             transition={{ duration: .5, delay: 1.6 }}
-                            className='text-3xl/10 sm:text-4xl/10 mx-auto font-bold pb-5 lg:mx-0 lg:max-w-[570px]'>
+                            className=' text-xl/8  sm:text-3xl/10 sm:max-w-[570px] lg:text-3xl/10  mx-auto font-bold pb-5 lg:mx-0  lg:max-w-[570px]'>
                             {t('hero.header')}
                         </motion.h1>
                         <motion.p variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: 1, y: 0 }, }}
                             initial="hidden"
                             animate="visible"
                             transition={{ duration: .5, delay: 1.8 }}
-                            className=' text-base/6 font-medium text-gray-200 pb-10'>
+                            className='text-[14px] sm:text-base/6 font-medium text-gray-200 pb-10'>
                             {t('hero.paragraph')}
                         </motion.p>
 

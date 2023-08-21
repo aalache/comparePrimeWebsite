@@ -78,18 +78,18 @@ export default function Form(){
 
     return (
         <div  className="w-full  bg-white h-auto pt-16 pb-20 md:pt-20 text-black shadow-2xl border-4 border-t-gray-300">
-            <div className="flex flex-col justify-between items-center max-w-[1240px] h-52 mx-auto px-4">
+            <div className="flex flex-col justify-between items-center max-w-[1240px] h-auto mx-auto px-4">
                 <Reveal>
-                    <h2 className="text-blue-900 text-3xl font-semibold max-w-[550px] pb-6 md:pb-10 text-center "> {t('form.header')} </h2>
+                    <h2 className="text-xl/8  sm:text-3xl/10 sm:max-w-[570px] text-blue-900 font-semibold max-w-[550px] pb-6 md:pb-10 text-center "> {t('form.header')} </h2>
                 </Reveal>
                 <Reveal>
-                    <p className="text-base/6 font-medium text-gray-700 pb-10  max-w-[550px] text-center">
+                    <p className="text-[14px] sm:text-base/6 font-medium text-gray-700 pb-3 md:pb-10  max-w-[550px] text-center">
                     {t('form.paragraph')}
                     </p>
                 </Reveal> 
             </div>
             <form  id="form" method='post' onSubmit={(e) => handleSubmit(e)} 
-                  className="grid grid-cols-1 sm:max-w-[550px] md:max-w-[900px] md:grid-cols-2 gap-3 justify-center content-center pt-20 mx-auto px-4 text-blue-700 font-medium mt-20 sm:mt-5"  >
+                  className="grid grid-cols-1 sm:max-w-[550px] md:max-w-[900px] md:grid-cols-2 gap-3 justify-center content-center  mx-auto px-4 text-blue-700 font-medium mt-20 sm:mt-5"  >
                 <Reveal>
                     <div className="flex flex-col justify-between  ">
                         <label htmlFor="nom" className="text-base font-semibold pb-2 text-blue-900">{t('form.name')}</label>

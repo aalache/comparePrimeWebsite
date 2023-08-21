@@ -14,7 +14,7 @@ export default function Testimonial(){
             <div className="  grid grid-cols-1 lg:grid-cols-4  w-full px-4 mx-auto  max-w-[1240px] ">
             
                 <Reveal>
-                    <h1 className=' text-3xl text-center pb-16 font-bold text-blue-900 lg:pb-0 lg:text-left'>{t('testimonial.header')}</h1>
+                    <h1 className=' text-xl/8  sm:text-3xl/10 sm:max-w-[570px] text-center pb-16 font-bold text-blue-900 lg:pb-0 lg:text-left'>{t('testimonial.header')}</h1>
                 </Reveal>
                 
                 <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 col-span-3  gap-y-14">

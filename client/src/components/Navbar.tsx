@@ -31,10 +31,10 @@ export default function Navbar() {
     return (
         <div className=' fixed top-0 z-50 mx-auto w-full  '>
 
-        <nav className=' w-full  bg-white rounded-b-md border-2 border-t-4 z-50 shadow-xl flex justify-between items-center h-16 max-w-[1240px] mx-auto px-4 text-gray-800 ' >
+        <nav className=' w-full  bg-white rounded-b-md border-2 border-t-4 z-50 shadow-xl flex justify-between items-center h-16 max-w-[1240px] mx-auto px-2 md:px-4 text-gray-800 ' >
             <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.4, duration: 0.4 }} className=''>
-                <h1 className='w-full text-xl/5 font-bold text-blue-700 uppercase '>Compare prime</h1>
-                <p className='text-xs text-blue-700 uppercase'>comparateur d'assurance</p>
+                <h1 className='w-full text-base/4 md:text-xl/5 font-bold text-blue-700 uppercase '>Compare prime</h1>
+                <p className='text-[10px] md:text-xs text-blue-700 uppercase'>comparateur d'assurance</p>
             </motion.div>
 
             <div className='flex justify-between items-center  lg:basis-[600px] capitalize'>
@@ -47,7 +47,7 @@ export default function Navbar() {
                 <div className='flex justify-between items-center  '>
 
 
-                    <motion.select initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.2, duration: 0.4 }} className='mx-2 w-32 p-1 text-gray-600 rounded-md text-center shadow-xl border-2 border-gray-200 bg-[#efefef]'>
+                    <motion.select initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.2, duration: 0.4 }} className='mx-2  w-12 md:w-32 p-1 text-gray-600 rounded-md text-center shadow-xl border-2 border-gray-200 bg-[#efefef]'>
                         {Object.keys(locales).map((key) => {
                             return (
                                 <option onClick={() => { i18n.changeLanguage(key) }} className='py-2 flex justify-center items-center hover:bg-[#efefef] rounded-md hover:shadow  hover:text-black' key={key}>
@@ -73,8 +73,8 @@ export default function Navbar() {
                 <div className='pt-4 px-4 pb-5'>
                     <Reveal>
                         <a href="#hero">
-                            <h1 className='w-full text-xl/5 font-bold text-blue-700 uppercase '>Compare prime</h1>
-                            <p className='text-xs text-blue-700 uppercase'>comparateur d'assurance</p>
+                            <h1 className='w-full text-base/4 md:text-xl/5 font-bold text-blue-700 uppercase '>Compare prime</h1>
+                             <p className='text-[10px] md:text-xs text-blue-700 uppercase'>comparateur d'assurance</p>
                         </a>
                     </Reveal>
                 </div>
