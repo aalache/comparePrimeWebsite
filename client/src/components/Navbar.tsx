@@ -78,7 +78,7 @@ export default function Navbar() {
                         </a>
                     </Reveal>
                 </div>
-                <ul className='text-[#0f172a]/80'>
+                <ul className='text-[#0f172a]/80 px-0'>
                     <Reveal>
                         <li onClick={handleNav} className='hover:scale-95 font-semibold text-base px-6 py-3 hover:text-blue-700 ease-in-out duration-200'><a href="#hero">{t('nav.home')}</a></li>
                     </Reveal>
