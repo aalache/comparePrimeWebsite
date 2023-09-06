@@ -41,7 +41,7 @@ export default function Hero() {
                         </motion.div>
 
                     </div>
-                    <motion.div drag whileHover={{ scale: 1.1 }}
+                    <motion.div
                         variants={{
                             hidden: { opacity: 0, y: 75 },
                             visible: { opacity: 1, y: 0 },

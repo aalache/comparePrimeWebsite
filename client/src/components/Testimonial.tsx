@@ -1,8 +1,8 @@
 
 import Card from './Card';
-import profile1 from '../assets/womenprofile1.jpg'
-import profile2 from '../assets/womenprofile2.jpg'
-import profile3 from '../assets/Menprofile.jpg'
+import profile1 from '../assets/womenprofile1.jpg';
+import profile2 from '../assets/womenprofile2.jpeg';
+import profile3 from '../assets/Menprofile.png';
 import Reveal from './Reveal';
 import { useTranslation } from 'react-i18next';
 
