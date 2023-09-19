@@ -2,6 +2,12 @@ import {IoIosMailUnread} from 'react-icons/io'
 import Reveal from './Reveal'
 import { useTranslation } from 'react-i18next'
 
+//SOCIAL MEDIA ICONS
+
+import {FaTwitter} from 'react-icons/fa'
+import {FaFacebookF} from 'react-icons/fa'
+import {FaInstagram} from 'react-icons/fa'
+
 export default function Footer(){
     const date = new Date()
 
@@ -16,6 +22,18 @@ export default function Footer(){
                             <h1 className='w-full text-xl/5 font-bold text-white uppercase '>Compare prime</h1>
                             <p className='text-xs text-[#efefef] uppercase'>comparateur d'assurance</p>
                         </a>
+
+                       <div className=' flex justify-between items-center mt-6 mb-8 w-28 '>
+                            <a href="#">
+                                <FaTwitter className='hover:scale-150 transition-all hover:text-[#efefef] shadow-2xl' size={18} />
+                            </a>
+                            <a href="#">
+                                <FaFacebookF className='hover:scale-150 transition-all hover:text-[#efefef] shadow-2xl' size={18} />
+                            </a>
+                            <a href="#">
+                                <FaInstagram className='hover:scale-150 transition-all hover:text-[#efefef] shadow-2xl' size={18} />
+                            </a>
+                        </div> 
                     </Reveal>
                 </div>
                 <div className="col-span-3 grid grid-cols-1 md:grid-cols-4 gap-5 md:justify-items-center   ">

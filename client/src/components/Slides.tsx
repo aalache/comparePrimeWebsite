@@ -19,10 +19,10 @@ export default function Slides() {
 
     return (
         <div className=' relative  carousel'>
-            <div className='flex justify-center items-center bg-gradient-to-br from-blue-700/60 via-blue-700/90 to-blue-700 h-auto md:p-4  md:pt-5 w-full mx-auto  text-white'>
+            <div className='flex justify-center items-center bg-gradient-to-br from-blue-700/60 via-blue-700/90 to-blue-700 max-h-[85vh] md:p-4  md:pt-5 w-full mx-auto  text-white'>
 
                 <Reveal>
-                    <div className="embla mx-auto w-full h-[40vh] max-w-[1240px]  md:max-h-[65vh] rounded-md shadow-2xl border-gray-200 border-2" ref={emblaRef}>
+                    <div className="embla mx-auto w-full h-[40vh] max-w-[1240px]  md:max-h-[70vh] md:rounded-md shadow-2xl border-gray-200 md:border-2" ref={emblaRef}>
                         <div className="embla__container">
 
                             <div className="embla__slide">
